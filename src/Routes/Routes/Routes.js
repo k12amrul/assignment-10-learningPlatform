@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layout/Main";
+import Blog from "../../Pages/Blog/Blog";
 import Category from "../../Pages/Category/Category";
 import CategoryDetails from "../../Pages/CategoryDetails/CategoryDetails";
 import CourseDetails from "../../Pages/CourseDetails/CourseDetails";
@@ -37,8 +38,8 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
               loader :  () => fetch('https://assignment-tenserver.vercel.app/category')
             },
             {
-              path : '/t',
-              element:<Test></Test> ,
+              path : '/blog',
+              element: <Blog></Blog> ,
             },
             {
               path : '/Category/:id',

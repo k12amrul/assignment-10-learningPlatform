@@ -22,8 +22,7 @@ const coursesData= useLoaderData()
 
     return (
         <div  className=''>
-            <h1> Courses {coursesData.length}</h1>
-            <h1>e</h1>
+            
             {
                 courseItem.map( courseItem => <CourseItem
                     courseItem={courseItem}
